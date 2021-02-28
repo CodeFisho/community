@@ -14,7 +14,7 @@ import java.util.List;
 
 public interface DiscussPostMapper {
 
-    List<DiscussPost> selectDiscussPosts(int userId, @Param("offset") int offset,@Param("limit") int limit);
+    List<DiscussPost> selectDiscussPosts(@Param("userId") int userId, @Param("offset") int offset,@Param("limit") int limit);
 //    @Param注解用于给参数起别名；
 //    如果只有一个参数，并且在<if>中，则必须要起别名
     int selectDiscussPostRows(@Param("userId") int userId);

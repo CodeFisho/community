@@ -9,7 +9,7 @@
     </sql>
 
     <sql id="selectFields">
-        id, username, password, salt, email, type, status, activation_code, header_url, create_time
+        id, username, password, salt, email, type, status, activation_code as activationCode, header_url as headerUrl, create_time as createTime
     </sql>
 
     <select id="selectById" resultType="vip.xianyu.community.entity.User">

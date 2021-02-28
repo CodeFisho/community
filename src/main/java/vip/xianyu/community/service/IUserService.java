@@ -8,5 +8,5 @@ import vip.xianyu.community.entity.User;
  * @Description:
  */
 public interface IUserService {
-    public User findUserById(int userId);
+    public User findUserById(int id);
 }

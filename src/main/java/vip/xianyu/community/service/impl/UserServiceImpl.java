@@ -2,6 +2,7 @@ package vip.xianyu.community.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import vip.xianyu.community.dao.UserMapper;
 import vip.xianyu.community.entity.User;
 import vip.xianyu.community.service.IUserService;
 
@@ -14,9 +15,9 @@ import vip.xianyu.community.service.IUserService;
 public class UserServiceImpl implements IUserService {
 
     @Autowired
-    private IUserService userService;
+    private UserMapper userMapper;
     @Override
-    public User findUserById(int userId) {
-        return userService.findUserById(userId);
+    public User findUserById(int id) {
+        return userMapper.selectById(id);
     }
 }
