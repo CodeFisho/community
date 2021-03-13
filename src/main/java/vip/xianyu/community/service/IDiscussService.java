@@ -14,4 +14,8 @@ public interface IDiscussService {
     public List<DiscussPost> findDiscussPosts(int userId,int offset,int limit);
 
     public int getDiscussPostRows(int userId);
+
+    public int addDiscussPost(DiscussPost discussPost);
+
+    public DiscussPost selectDisscussPostById(int id);
 }
